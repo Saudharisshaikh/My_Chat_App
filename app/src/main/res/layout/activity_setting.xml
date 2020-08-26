@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SettingActivity">
+
+
+    <include
+        android:id="@+id/settingpage_toolbar"
+        layout="@layout/toolbar_layout"
+        >
+
+    </include>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/profileimage"
+        android:layout_marginTop="90dp"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/colorPrimary"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_username"
+        android:inputType="textMultiLine"
+        android:hint="Username"
+        android:textColorHint="@color/colorPrimary"
+        android:textAlignment="center"
+        android:drawableStart="@drawable/ic_person_pin_black_24dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/profile_image"
+        android:textStyle="bold"
+        android:background="@drawable/input"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/set_status"
+        android:inputType="textMultiLine"
+        android:hint="I am online now !!"
+        android:textColorHint="@color/colorPrimary"
+        android:textAlignment="center"
+        android:drawableStart="@drawable/ic_edit_location_black_24dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/set_username"
+        android:textStyle="bold"
+        android:background="@drawable/input"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="6dp"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/updatestatus_button"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColorHint="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/set_status"
+        android:textStyle="bold"
+        android:background="@drawable/button"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        />
+
+
+</RelativeLayout>

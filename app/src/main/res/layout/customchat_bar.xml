@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/profileimage"
+        android:cropToPadding="true"
+        android:layout_marginRight="10dp"
+        android:id="@+id/customchatbarimage"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customchatbartextview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Text View"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customchatbarlastseen"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/customchatbartextview"
+        android:text="last seen"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ProfileActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/profileimage"
+        android:id="@+id/visitprofile_image"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/colorPrimary"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visitprofile_image"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:text="user name"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/visituser_name"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visituser_name"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:text="user status"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:id="@+id/visituser_status"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sendrequest_button"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:text="Send Request"
+        android:layout_below="@+id/visituser_status"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginLeft="65dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/declinerequest_button"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:text="Cancel Request"
+        android:layout_below="@+id/sendrequest_button"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginLeft="65dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

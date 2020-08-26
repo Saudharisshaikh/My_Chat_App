@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".GroupchatActivity">
+
+
+    <include
+        android:id="@+id/chatbar_layout"
+        layout="@layout/toolbar_layout"
+        >
+
+
+    </include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chatbar_layout"
+        android:id="@+id/myscroll_view"
+        android:layout_above="@+id/mylinearlayout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/groupchat_display"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/mylinearlayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        >
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_groupmessage"
+        android:hint="Write your group message"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+
+        android:padding="17dp"
+        />
+        
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_messagebutton"
+            android:src="@drawable/ic_send_black_24dp"
+            />
+        
+    </LinearLayout>
+
+
+</RelativeLayout>
